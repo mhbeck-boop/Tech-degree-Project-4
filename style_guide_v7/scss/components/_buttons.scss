@@ -1,0 +1,68 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    @include breakpoint {
+        padding: 10px 30px;
+    }
+  }
+
+  .btn + .btn {
+    @include breakpoint {
+        margin-left: 10px;
+    }
+  }
+
+  .default {
+    background-color: $color-links;
+
+    &:hover {
+      background-color: lighten($color-links, 15%);
+      transition: all 2s ease-out;
+    }
+  }
+  
+  .error {
+    background-color: #e4757a;
+
+    &:hover {
+      background-color: lighten(#e4757a, 15%);
+      transition: all 2s ease-out;
+    }
+  }
+  
+  .info {
+    background-color: #927bc1;
+
+    &:hover {
+      background-color: lighten(#927bc1, 15%);
+      transition: all 2s ease-out;
+    }
+  }
+  
+  .success {
+    background-color: #63cc82;
+
+    &:hover {
+      background-color: lighten(#63cc82, 15%);
+      transition: all 2s ease-out;
+    }
+  }
+  
+  .warning {
+    background-color: #fd7856;
+
+    &:hover {
+      background-color: lighten(#fd7856, 15%);
+      transition: all 2s ease-out;
+    }
+  }
