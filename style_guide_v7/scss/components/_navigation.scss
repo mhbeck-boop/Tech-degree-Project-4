@@ -24,15 +24,15 @@
         background-color .2s ease-in-out, 
         color .2s ease-in-out;
 
-        @include breakpoint {
-            flex-basis: 100px;
-        }
-
-    &-link:hover {
-        color: $white;  
-        background-color: $color-secondary;
+    @include breakpoint {
+        flex-basis: 100px;
     }
-}
+
+        &:hover {
+            color: $white;  
+            background-color: $color-secondary; 
+        }
+    }
 }
 
 
